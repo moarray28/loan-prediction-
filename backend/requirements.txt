@@ -8,3 +8,4 @@ uvicorn
 jupyter
 matplotlib
 seaborn
+httpx
