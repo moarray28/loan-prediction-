@@ -10,3 +10,4 @@ matplotlib
 seaborn
 httpx
 black
+python-dotenv
