@@ -10,9 +10,11 @@ from app.services.prediction_service import save_prediction
 
 router = APIRouter()
 
+
 @router.get("/")
 def prediction_root():
     return {"message": "Prediction API V1"}
+
 
 @router.post(
     "/",
