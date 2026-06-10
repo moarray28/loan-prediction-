@@ -9,9 +9,22 @@ def save_prediction(
     priority
 ):
     prediction = Prediction(
-        income=request.income,
-        loan_amount=request.loan_amount,
-        credit_score=request.credit_score,
+        gender=request.Gender,
+        married=request.Married,
+        dependents=request.Dependents,
+        education=request.Education,
+        self_employed=request.Self_Employed,
+
+        applicant_income=request.ApplicantIncome,
+        coapplicant_income=request.CoapplicantIncome,
+
+        loan_amount=request.LoanAmount,
+        loan_amount_term=request.Loan_Amount_Term,
+
+        credit_history=request.Credit_History,
+
+        property_area=request.Property_Area,
+
         risk=risk,
         approval_probability=probability,
         lead_priority=priority
