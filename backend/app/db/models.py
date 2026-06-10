@@ -1,5 +1,4 @@
 # backend/app/db/models.py
-
 from sqlalchemy import Column
 from sqlalchemy import Float
 from sqlalchemy import Integer

@@ -24,11 +24,6 @@ def prediction_root():
     "/",
     response_model=LoanPredictionResponse
 )
-
-@router.post(
-    "/",
-    response_model=LoanPredictionResponse
-)
 def predict(
     request: LoanPredictionRequest,
     db: Session = Depends(get_db)
@@ -68,6 +63,7 @@ def predict(
         lead_priority=lead_priority
     )
 
+
 @router.get("/history")
 def get_history(
     db: Session = Depends(get_db)
@@ -100,3 +96,4 @@ def get_history(
         )
 
     return result
+
