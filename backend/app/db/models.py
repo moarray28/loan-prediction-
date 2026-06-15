@@ -13,6 +13,8 @@ class Prediction(Base):
 
     id = Column(Integer, primary_key=True)
 
+    risk = Column(String)
+
     gender = Column(String)
     married = Column(String)
     dependents = Column(String)
@@ -30,4 +32,7 @@ class Prediction(Base):
     property_area = Column(String)
 
     prediction = Column(String)
+
     approval_probability = Column(Float)
+
+    lead_priority = Column(String)
